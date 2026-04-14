@@ -14,7 +14,7 @@ A simple project and to-do management web app built with vanilla JavaScript as p
 
 ### **To-Dos**
 - Add to-dos under existing projects  
-- Edit existing to-dos (title, description, date, project)  
+- Edit existing to-dos 
 - Delete to-dos  
 - Expand to-dos to view full details  
 - Filter to-dos by project  
@@ -29,10 +29,11 @@ A simple project and to-do management web app built with vanilla JavaScript as p
 
 - HTML5  
 - CSS3  
-- Vanilla JavaScript (ES6 Modules)  
-- Classes (Project & ToDo models)  
+- Vanilla JavaScript 
+- ES6 Modules
+- Classes 
 - Modular Architecture (separation of logic, UI, and initialization)  
-- Local Storage API (data persistence)  
+- Local Storage API   
 - DOM Manipulation  
 - Event Listeners & Event Delegation  
 
