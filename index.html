@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<script defer src="main.js"></script></head>
+<body>
+    <div class="container">
+            <div class="project-list">
+                <div class="project-heading">
+                    Projects
+                </div>
+                <div class="project-nav">
+                </div>
+            </div>
+        
+        <div class="to-do-list">
+            <div class="to-do-header">
+                <div class="to-do-heading">
+                    <div> To Do List </div>
+                </div>
+                <div class="to-do-buttons">
+                    <button class="add-project">Add Project</button>
+                    <button class="add-to-do">Add To-Do</button>
+                </div>
+            </div>
+            <div class="to-do-container">
+
+            </div>
+        </div>
+
+        <dialog id="proj-modal">
+            <div class="proj-form-heading">
+                <div class="proj-form-title"> Add New Project </div>
+            </div>
+            <form class="proj-form" method="GET">
+                <div class="proj-form-question">
+                    <label for="proj-title" class="label"> Project Title* </label>
+                    <input type="text" id="proj-title" name="projTitle" required/>
+                </div>
+                <div class="proj-buttons">
+                    <button class="proj-add" type="submit"> Add </button>
+                    <button class="proj-cancel" type="button"> Cancel </button>
+                </div>
+            </form>
+        </dialog>
+
+        <dialog id="projEdit-modal">
+            <div class="proj-form-heading">
+                <div class="proj-form-title"> Edit Project </div>
+            </div>
+            <form class="proj-form proj-edit-form" method="GET">
+                <div class="proj-form-question">
+                    <label for="editTitle" class="label"> Project Title* </label>
+                    <input type="text" id="editTitle" name="editTitle" required/>
+                </div>
+                <div class="proj-buttons">
+                    <button class="proj-add proj-edit-save" type="submit"> Save </button>
+                    <button class="proj-cancel proj-edit-cancel" type="button"> Cancel </button>
+                </div>
+            </form>
+        </dialog>
+
+        <dialog id="to-do-modal">
+            <div class="to-do-form-heading proj-form-heading">
+                <div class="to-do-form-title"> New To Do </div>
+            </div>
+            <form class="to-do-form" method="GET">
+                <div class="proj-form-question">
+                    <label for="toDoTitle" class="label"> Title* </label>
+                    <input type="text" id="toDoTitle" name="toDoTitle" required/>
+                </div>
+                <div class="proj-form-question">
+                    <label for="toDoProject" class="label"> Choose Project* </label>
+                    <select id="toDoProject" name="toDoProject" required>
+                        <!-- <option value="" disabled selected></option> -->
+<!--                         <option value="Apple">Apple</option> -->
+
+                    </select>
+                </div>
+                <div class="proj-form-question">
+                    <label for="toDoDesc" class="label"> Description </label>
+                    <textarea name="toDoDesc" id="toDoDesc"></textarea>
+                </div>
+                <div class="proj-form-question">
+                    <label for="toDoDate" class="label"> Due Date* </label>
+                    <input type="date" id="toDoDate" name="toDoDate" required/>
+                </div>
+                <div class="proj-buttons to-do-form-buttons">
+                    <button class="proj-add to-do-add" type="submit"> Add </button>
+                    <button class="proj-cancel to-do-cancel" type="button"> Cancel </button>
+                </div>
+            </form>
+        </dialog>
+
+        <dialog id="edit-to-do-modal">
+            <div class="to-do-form-heading proj-form-heading">
+                <div class="to-do-form-title"> Edit To Do </div>
+            </div>
+            <form class="edit-to-do-form" method="GET">
+                <div class="proj-form-question">
+                    <label for="editToDoTitle" class="label"> Title* </label>
+                    <input type="text" id="editToDoTitle" name="editToDoTitle" required/>
+                </div>
+                <div class="proj-form-question">
+                    <label for="editToDoProject" class="label"> Choose Project* </label>
+                    <select id="editToDoProject" name="editToDoProject" required>
+                        <!-- <option value="" disabled selected></option> -->
+<!--                         <option value="Apple">Apple</option> -->
+
+                    </select>
+                </div>
+                <div class="proj-form-question">
+                    <label for="editToDoDesc" class="label"> Description </label>
+                    <textarea name="editToDoDesc" id="editToDoDesc"></textarea>
+                </div>
+                <div class="proj-form-question">
+                    <label for="editToDoDate" class="label"> Due Date* </label>
+                    <input type="date" id="editToDoDate" name="editToDoDate" required/>
+                </div>
+                <div class="proj-buttons to-do-form-buttons">
+                    <button class="proj-add edit-to-do-save" type="submit"> Save </button>
+                    <button class="proj-cancel edit-to-do-cancel" type="button"> Cancel </button>
+                </div>
+            </form>
+        </dialog>
+    
+    </div>
+</body>
+</html>
